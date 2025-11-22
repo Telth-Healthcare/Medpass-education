@@ -45,9 +45,9 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <Button className="px-6 py-2 bg-primary text-white rounded-full shadow-lg hover:opacity-90 transition">
+            {/* <Button className="px-6 py-2 bg-primary text-white rounded-full shadow-lg hover:opacity-90 transition">
               Schedule Consultation
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -81,9 +81,9 @@ const Navbar = () => {
                 </li>
               ))}
 
-              <Button className="w-full bg-primary text-white rounded-full mt-4">
+              {/* <Button className="w-full bg-primary text-white rounded-full mt-4">
                 Schedule Consultation
-              </Button>
+              </Button> */}
             </ul>
           </div>
         )}

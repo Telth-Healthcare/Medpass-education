@@ -21,23 +21,23 @@ const Hero = () => {
           {/* LEFT */}
           <div className="space-y-6 ml-2 text-white animate-fade-up">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-              Expert Vision Care <br />
-              and Trusted Eye <br />
-              Specialists
+              Your Gateway to <br />
+              Global Healthcare <br />
+              Excellence
             </h1>
 
             <p className="text-lg md:text-xl text-white/80 max-w-lg">
-              Comprehensive eye exams with modern tools that provide accurate results while
-              ensuring comfort and clarity for every patient.
+              Empowering healthcare professionals to reach their highest potential through
+              world-class training, international opportunities, and unwavering support.
             </p>
 
-            <Button
+            {/* <Button
               size="lg"
               className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-6 text-lg rounded-full shadow-lg transition-all"
             >
               Book Now
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </Button> */}
           </div>
 
           {/* RIGHT • Patient Section */}

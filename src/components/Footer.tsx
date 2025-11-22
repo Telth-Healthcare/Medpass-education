@@ -59,11 +59,11 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-2 text-white text-sm">
                 <Phone className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <span>+1 (555) 123-4567</span>
+                <span>1800-570-0140</span>
               </div>
               <div className="flex items-start gap-2 text-white text-sm">
                 <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <span>Global Healthcare District</span>
+                <span>The Chambers Vardhaman Trade Center, 3 rd Floor, Nehru Place, New Delhi 110019, India</span>
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -42,7 +43,7 @@ const CTA = () => {
 
               <div className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-4">
                 {/* Primary CTA */}
-                <Button
+                {/* <Button
                   size="lg"
                   className="
                     px-10 py-6 text-lg font-semibold
@@ -53,9 +54,10 @@ const CTA = () => {
                 >
                   Schedule Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
+                </Button> */}
 
                 {/* Secondary CTA */}
+                <Link to='/contact'>
                 <Button
                   size="lg"
                   variant="outline"
@@ -67,8 +69,9 @@ const CTA = () => {
                   "
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Us Today
+                  Contact
                 </Button>
+                </Link>
               </div>
             </div>
           </div>

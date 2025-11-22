@@ -21,10 +21,10 @@ const Doctors = () => {
               <p className="text-xl md:text-2xl text-white/90">
                 Advance your medical career through specialized research programs in cutting-edge fields
               </p>
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 border-0 text-lg px-8 py-6">
+              {/* <Button size="lg" className="bg-white text-primary hover:bg-white/90 border-0 text-lg px-8 py-6">
                 Apply Now
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </section>
