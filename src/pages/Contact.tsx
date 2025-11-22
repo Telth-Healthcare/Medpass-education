@@ -186,7 +186,7 @@ const Contact = () => {
 
                 <div className="space-y-6">
                   {[
-                    { icon: Mail, title: "Email", content: "info@medpass.com", link: "mailto:info@medpass.com" },
+                    { icon: Mail, title: "Email", content: "Info@mytelth.com", link: "mailto:Info@mytelth.com" },
                     { icon: Phone, title: "Phone", content: "1800-570-0140", link: "tel:1800-570-0140" },
                     { icon: MapPin, title: "Office", content: "The Chambers Vardhaman Trade Center, 3 rd Floor, Nehru Place, New Delhi 110019, India" },
                     { icon: Clock, title: "Hours", content: "Monday - Friday: 9:00 AM - 6:00 PM EST" },
