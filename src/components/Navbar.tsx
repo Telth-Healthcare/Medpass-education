@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from '../assets/MEDPASS LOGO - Horizontal.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +14,10 @@ const Navbar = () => {
 
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-xl">M</span>
-            </div>
-            <span className="text-3xl font-bold bg-gradient-to-r from-white to-blue-200 text-black bg-clip-text">
+            <img src={logo} alt="logo" className="w-auto h-12"/>
+            {/* <span className="text-3xl font-bold bg-gradient-to-r from-white to-blue-200 text-black bg-clip-text">
               MedPass
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Menu */}

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from '../assets/MEDPASS LOGO - Horizontal.png'
 
 const Footer = () => {
   return (
@@ -9,10 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-xl">M</span>
-              </div>
-              <span className="text-2xl font-bold text-white">MedPass</span>
+              <img src={logo} alt="logo" className="w-auto h-12" />
             </div>
             <p className="text-white text-sm">
               Empowering healthcare professionals to reach their highest potential through world-class training.
