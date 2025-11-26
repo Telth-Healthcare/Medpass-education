@@ -51,7 +51,7 @@ const Hero = () => {
 
               <div>
                 <p className="font-bold text-white text-xl">24k</p>
-                <p className="text-white/70 text-sm">Happy Patients</p>
+                <p className="text-white/70 text-sm">Happy Education</p>
               </div>
             </div>
           </div>
