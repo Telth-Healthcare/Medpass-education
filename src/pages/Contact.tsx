@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
 
@@ -48,7 +49,7 @@ const Contact = () => {
     const data = await response.json();
 
     if (data.success) {
-      alert("Message sent successfully!");
+      toast.success("Message sent successfully!");
       setFormData({
         first_name: "",
         last_name: "",
@@ -58,7 +59,7 @@ const Contact = () => {
         message: "",
       });
     } else {
-      alert(data.message || "Something went wrong. Please try again.");
+      toast.error(data.message || "Something went wrong. Please try again.");
     }
   };
 

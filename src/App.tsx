@@ -9,6 +9,8 @@ import Nurses from "./pages/Nurses";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import AutoScroll from "./components/AutoScroll";
+  import { ToastContainer} from 'react-toastify';
 
 const queryClient = new QueryClient();
 
@@ -18,6 +20,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+      <AutoScroll />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/doctors" element={<Doctors />} />
@@ -28,6 +31,7 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+       <ToastContainer />
     </TooltipProvider>
   </QueryClientProvider>
 );
