@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
 
           {/* Programs */}
-          <div>
+          {/* <div>
             <h3 className="font-bold mb-4 text-white">Programs</h3>
             <div className="space-y-2">
               <div className="text-white text-sm">Clinical Research</div>
@@ -45,7 +45,7 @@ const Footer = () => {
               <div className="text-white text-sm">Germany Nursing</div>
               <div className="text-white text-sm">OET Preparation</div>
             </div>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
