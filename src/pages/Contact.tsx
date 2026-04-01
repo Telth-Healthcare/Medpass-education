@@ -27,42 +27,43 @@ const Contact = () => {
     });
   };
 
-  // ---------- SUBMIT ----------
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+// ---------- SUBMIT ----------
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    if (submitted) return;
+  if (submitted) return;
 
-    const fd = new FormData();
-    fd.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
-    fd.append("first_name", formData.first_name);
-    fd.append("last_name", formData.last_name);
-    fd.append("email", formData.email);
-    fd.append("phone", formData.phone);
-    fd.append("role", formData.role);
-    fd.append("message", formData.message);
-    fd.append("subject", "New Contact Form Submission");
-    fd.append("botcheck", "");
-    fd.append("source", 'https://www.medpassedu.org/');
-    
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: fd,
-      });
-
-      const data = await response.json();
-
-      if (data.success) {
-        toast.success("Message sent successfully!");
-        setSubmitted(true);
-      } else {
-        toast.error(data.message || "Something went wrong. Please try again.");
-      }
-    } catch (error) {
-      toast.error("Network error. Please try again later.");
-    }
+  const payload = {
+    first_name: formData.first_name,
+    last_name: formData.last_name,
+    email: formData.email,
+    phone: formData.phone,
+    role: formData.role,
+    message: formData.message,
+    subject: "New Contact Form Submission",
   };
+
+  try {
+    const response = await fetch("https://contactforms-henna.vercel.app/api/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      toast.success("Message sent successfully!");
+      setSubmitted(true);
+    } else {
+      toast.error(data.message || "Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    toast.error("Network error. Please try again later.");
+  }
+};
 
   return (
     <div className="min-h-screen">
